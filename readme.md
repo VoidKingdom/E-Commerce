@@ -1,4 +1,4 @@
-# CTEC3905 Assignment - Fayaz Sheikh - P16207462
+# Fayaz Sheikh - E-Commerce website
 
 This website is meant to be a variation of a video game store and the location on google map is for the location gameworld which has been closed down otherwise i didn't feel comfotable chosing a random location.
 
