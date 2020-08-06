@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--script to import font awesome icons to my website -->
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a963db15ce.js"></script>
+  <!--sets the title in the tab-->
+  <title>Cooking Mama: Cookstar</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    <!--This is the main Nav used for everything.-->
+    <div class="mainnav">
+      <!--This is the button for mobile nav, it only shows on mobile and hidden on desktop -->
+      <span class="open" onclick="toggleNav()">&#9776;</span>
+      <!--Here is the logo. Based on a real store but i made my own logo-->
+      <a href="index.html"><img alt="" class="logo" src="images/logo.png"></a>
+      <!--All the items used for nav are here, only support is a real page, the rest just use #-->
+      <a class="navitem" href="#">PLAYSTATION</a>
+      <a class="navitem" href="#">XBOX</a>
+      <a class="navitem" href="#">NINTENDO</a>
+      <a class="navitem" href="#">MERCH</a>
+      <a class="navitem" href="#">TECH</a>
+      <a class="navitem" href="help.html">SUPPORT</a>
+      <!--This is used the center the logo and the mobile nav. Since this is the exact same thing and on the opposite side, by only making it invisible, it balances the other 2 items. Changing any feature can make the nav bar crooked so its the exact same-->
+      <span class="open" onclick="toggleNav()">&#9776;</span>
+    </div>
+    <!-- This is the mobile nav which is opened once the mobile nav button is pressed and hidden through a height of 0 -->
+    <div class="mobilenav" id="nav">
+      <a href="#">PLAYSTATION</a>
+      <a href="#">XBOX</a>
+      <a href="#">NINTENDO</a>
+      <a href="#">PC GAMING</a>
+      <a href="#">PRE-OWNED</a>
+      <a href="help.html">SUPPORT</a>
+    </div>
+    <!--Script for everything core in the website, in this case the nav changing system and making the menu work -->
+    <script src="js/nav.js"></script>
+  </nav>
+</header>
+<main>
+  <!--A Image slider, went through multiple iterations but this one is the most functional -->
+  <div class="slider">
+    <figure>
+      <!--This is animated through keyframe animation, more explanation in readme -->
+      <img alt="" src="images/banner/divinity_banner.png">
+      <img alt="" src="images/banner/bl3_banner.png">
+      <img alt="" src="images/banner/darksiders_banner.png">
+      <img alt="" src="images/banner/metro_banner.png">
+    </figure>
+  </div>
+  <!-- -->
+  <div class="wrapper">
+    <div class="fp">
+      <a class="advert" href="#"><img alt="" src="images/advert.png"></a>
+      <div class="top">
+        <!--Top sellers class is only visible on desktop,otherwise it gets replaced by a single div due to space -->
+        <h1>Top Sellers</h1>
+        <div>
+          <a class="game" href="#"><img alt="" src="images/games/doome.png"> </a>
+          <a class="game" href="#"><img alt="" src="images/games/p5r.png"></a>
+          <a class="game" href="product.html"><img alt="" src="images/games/cookingmama.png"></a>
+          <a class="game" href="#"><img alt="" src="images/games/re3r.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="productcatalogue">
+      <!--This anchor is only visible on mobile and tablet, otherwise we have plenty of space to use top sellers div -->
+      <a href="#">
+        <img alt="" src="images/catagories/games.png">
+        <p>New & Pre-owned Games</p>
+      </a>
+      <!--These are visible always but change their location and appearance dependant on platform -->
+      <a href="#">
+        <img alt="" src="images/catagories/exclusive.png">
+        <p>XChange Exclusives</p>
+      </a>
+      <a href="#">
+        <img alt="" src="images/catagories/controller.png">
+        <p>Controllers</p>
+      </a>
+      <a href="#">
+        <img alt="" src="images/catagories/currency.png">
+        <p>In-Game Points</p>
+      </a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div>
+    <h3>Subscribe To Our Newsletter</h3>
+    <p>
+      Like our Brand?<br>
+      Like our Community?<br>
+      Like our Service?<br>
+      Then subscribe to our newsletter and found our deals as soon as we release them and get access to exclusive
+      discounts!<br>
+      <button>Subscribe</button>
+    </p>
+  </div>
+  <div>
+    <!--Social Media Icons taken from awesome fonts-->
+    <a href="#"><i class="fab fa-facebook-square"></i></a>
+    <a href="#"><i class="fab fa-twitter-square"></i></a>
+    <a href="#"><i class="fab fa-google-plus-square"></i></a>
+    <a href="#"><i class="fas fa-share-alt-square"></i></a>
+  </div>
+</footer>
+</body>
+</html>

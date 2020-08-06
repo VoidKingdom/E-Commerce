@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--script to import font awesome icons to my website -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a963db15ce.js"></script>
+    <!--sets the title in the tab-->
+    <title>Cooking Mama: Cookstar</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <!--This is the main Nav used for everything.-->
+        <div class="mainnav">
+            <!--This is the button for mobile nav, it only shows on mobile and hidden on desktop -->
+            <span class="open" onclick="toggleNav()">&#9776;</span>
+            <!--Here is the logo. Based on a real store but i made my own logo-->
+            <a href="index.html"><img alt="" class="logo" src="images/logo.png"></a>
+            <!--All the items used for nav are here, only support is a real page, the rest just use #-->
+            <a class="navitem" href="#">PLAYSTATION</a>
+            <a class="navitem" href="#">XBOX</a>
+            <a class="navitem" href="#">NINTENDO</a>
+            <a class="navitem" href="#">MERCH</a>
+            <a class="navitem" href="#">TECH</a>
+            <a class="navitem" href="help.html">SUPPORT</a>
+            <!--This is used the center the logo and the mobile nav. Since this is the exact same thing and on the opposite side, by only making it invisible, it balances the other 2 items. Changing any feature can make the nav bar crooked so its the exact same-->
+            <span class="open" onclick="toggleNav()">&#9776;</span>
+        </div>
+        <!-- This is the mobile nav which is opened once the mobile nav button is pressed and hidden through a height of 0 -->
+        <div class="mobilenav" id="nav">
+            <a href="#">PLAYSTATION</a>
+            <a href="#">XBOX</a>
+            <a href="#">NINTENDO</a>
+            <a href="#">PC GAMING</a>
+            <a href="#">PRE-OWNED</a>
+            <a href="help.html">SUPPORT</a>
+        </div>
+        <!--Script for everything core in the website, in this case the nav changing system and making the menu work -->
+        <script src="js/nav.js"></script>
+    </nav>
+</header>
+<main>
+    <!--Wrapper class to keep everything together and consistant -->
+    <div class="wrapper">
+        <h1>Cooking Mama: Cookstar</h1>
+        <div class="product">
+            <!--These are all the screenshot for the game which can be swapped through by clicking on the image desired -->
+            <div class="producticon">
+                <img alt="" onclick="picTitle()" src="images/cookingmama/title.jpg">
+                <img alt="" onclick="picToast()" src="images/cookingmama/toast.png">
+                <img alt="" onclick="picLemon()" src="images/cookingmama/lemon.jpg">
+                <img alt="" onclick="picBurger()" src="images/cookingmama/burger.jpg">
+                <img alt="" onclick="picAngry()" src="images/cookingmama/angry.jpg">
+                <img alt="" onclick="picMeat()" src="images/cookingmama/meat.jpg">
+            </div>
+            <!--This is the main enlarged image which changes once another is clicked -->
+            <div class="productimage"><img alt="" id="pic" src="images/cookingmama/title.jpg"></div>
+            <!--Script for changing the images -->
+            <script src="js/gallery.js"></script>
+            <div class="buy">
+                <p>£39.99</p>
+                <p>In Stock</p>
+                <p>Delivered within 5 working days</p>
+                <button>Add to Basket</button>
+            </div>
+            <!--Other related games, since there is a wrapped to keep things consistant i hide the ones that dont fit on screen in the css -->
+            <div class="related">
+                <img alt="" src="images/games/spyrort.png">
+                <img alt="" src="images/games/nioh2.png">
+                <img alt="" src="images/games/mhoj2.png">
+                <img alt="" src="images/games/FFVIIRemake.png">
+                <img alt="" src="images/games/p5r.png">
+            </div>
+            <!--Product description taken from the amazon page for filler -->
+            <div class="descext">
+                <h2>Product Description</h2>
+                <p>If you can't stand the heat, get into mama's kitchen! Cooking Mama is back with her most fantastic
+                    and fun video game adventure ever! Introducing cooking Mama: cookstar. A brand-new cooking Mama
+                    experience! Cooking Mama: cookstar features over 90 incredible new recipes for players to master.
+                    Cook everything from classic Japanese recipes to today's most tasty comfort foods. Cooking Mama:
+                    cookstar truly has a taste of everything. Not a carnivore? Not a problem! For the first time ever
+                    cooking Mama will feature both a traditional cooking mode and a vegetarian cooking mode. Burritos,
+                    bibimbap, Bubble tea, baked Alaska, pokebowls and so Much more. Explore the diverse menu to find
+                    what suits your taste. Don't think you have the skills to become a master chef? Don't worry, Mama
+                    will fix that! Just follow mama's instructions and create delicious and decadent treats that you can
+                    share with your friends. Chop, mince, slice, dice and roll! Precision motion controls Immerse
+                    players right into the action. With mama's help, you will become the world's greatest culinary
+                    artist.</p>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <h3>Subscribe To Our Newsletter</h3>
+        <p>
+            Like our Brand?<br>
+            Like our Community?<br>
+            Like our Service?<br>
+            Then subscribe to our newsletter and found our deals as soon as we release them and get access to exclusive
+            discounts!<br>
+            <button>Subscribe</button>
+        </p>
+    </div>
+    <div>
+        <!--Social Media Icons taken from awesome fonts-->
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        <a href="#"><i class="fas fa-share-alt-square"></i></a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--script to import font awesome icons to my website -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/a963db15ce.js"></script>
+    <!--sets the title in the tab-->
+    <title>Cooking Mama: Cookstar</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+        <!--This is the main Nav used for everything.-->
+        <div class="mainnav">
+            <!--This is the button for mobile nav, it only shows on mobile and hidden on desktop -->
+            <span class="open" onclick="toggleNav()">&#9776;</span>
+            <!--Here is the logo. Based on a real store but i made my own logo-->
+            <a href="index.html"><img alt="" class="logo" src="images/logo.png"></a>
+            <!--All the items used for nav are here, only support is a real page, the rest just use #-->
+            <a class="navitem" href="#">PLAYSTATION</a>
+            <a class="navitem" href="#">XBOX</a>
+            <a class="navitem" href="#">NINTENDO</a>
+            <a class="navitem" href="#">MERCH</a>
+            <a class="navitem" href="#">TECH</a>
+            <a class="navitem" href="help.html">SUPPORT</a>
+            <!--This is used the center the logo and the mobile nav. Since this is the exact same thing and on the opposite side, by only making it invisible, it balances the other 2 items. Changing any feature can make the nav bar crooked so its the exact same-->
+            <span class="open" onclick="toggleNav()">&#9776;</span>
+        </div>
+        <!-- This is the mobile nav which is opened once the mobile nav button is pressed and hidden through a height of 0 -->
+        <div class="mobilenav" id="nav">
+            <a href="#">PLAYSTATION</a>
+            <a href="#">XBOX</a>
+            <a href="#">NINTENDO</a>
+            <a href="#">PC GAMING</a>
+            <a href="#">PRE-OWNED</a>
+            <a href="help.html">SUPPORT</a>
+        </div>
+        <!--Script for everything core in the website, in this case the nav changing system and making the menu work -->
+        <script src="js/nav.js"></script>
+    </nav>
+</header>
+<main>
+    <!--Wrapper class to keep everything together and consistent -->
+    <div class="wrapper">
+        <!--Each catagory changes shape depend on page size, each have a fontawesome icon, text and then an explanation-->
+        <h1>Support</h1>
+        <div class="support">
+            <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Orders</h2>
+                <p>For support on previous purchases</p>
+            </a>
+            <a href="#">
+                <i class="fas fa-truck"></i>
+                <h2>Delivery & Collection</h2>
+                <p>Check if you eligible for delivery or questions on collection</p>
+            </a>
+            <a href="#">
+                <i class="fas fa-exchange-alt"></i>
+                <h2>Refunds & Exchanges</h2>
+                <p>Check if you are eligible for refund or exchange and how it works</p>
+            </a>
+            <a href="#">
+                <i class="fas fa-headset"></i>
+                <h2>Product Support</h2>
+                <p>For help with products supplied by us</p>
+            </a>
+            <a href="#">
+                <i class="far fa-question-circle"></i>
+                <h2>Our Policies</h2>
+                <p>Get to know us, what our aim is and what we aim to provide</p>
+            </a>
+            <a href="#">
+                <i class="fas fa-phone"></i>
+                <h2>Contact Us</h2>
+                <p>If none of the previous help and you still need to get in contact</p>
+            </a>
+            <!--The div & script is purely for google api. -->
+            <div id="map"></div>
+            <script src="js/gmap.js"></script>
+            <!--This script uses my api key combined with my google wallet to allow access to the website-->
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCifHQ3ZWTUp3elukTukUI2JqF4RVwGfSc&callback=initMap">
+            </script>
+            <!--Article to go with the google map, this swaps location to be below the map and then hidden-->
+            <article>
+                <h2>Our Store</h2>
+                <p>Prefer to discuss in person? Then visit us at your local store!</p>
+                <p>Due to quarantine we are currently closed, but we will be opening a new store close to you!</p>
+                <p>30 Church Gate<br>Leicester<br>LE1 4AJ</p>
+                <p>We are also hiring for our new store, keep an eye out on here if you want to join our family!</p>
+            </article>
+        </div>
+    </div>
+</main>
+<footer>
+    <div>
+        <h3>Subscribe To Our Newsletter</h3>
+        <p>
+            Like our Brand?<br>
+            Like our Community?<br>
+            Like our Service?<br>
+            Then subscribe to our newsletter and found our deals as soon as we release them and get access to exclusive
+            discounts!<br>
+            <button>Subscribe</button>
+        </p>
+    </div>
+    <div>
+        <!--Social Media Icons taken from awesome fonts-->
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-google-plus-square"></i></a>
+        <a href="#"><i class="fas fa-share-alt-square"></i></a>
+    </div>
+</footer>
+</body>
+</html>
